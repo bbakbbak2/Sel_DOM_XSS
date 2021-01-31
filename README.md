@@ -8,18 +8,20 @@ DOM XSS 취약점을 검출하기 위해 활용할 수 있는 소스입니다.
 3. URL 뒤에 #(hash태그)와 함께 페이로드 자동 입력
 4. 페이로드가 실행될 경우 취약으로 판정됨
 
-# 설치
+# 설치(파이썬3)
 ```
+git clone https://github.com/bbakbbak2/Sel_DOM_XSS.git
 pip install selenium 
 ```
 
 # 준비사항
 - 모든 영역 탭에서 보호모드 설정을 체크해야합니다. (인터넷, 로컬인트라넷, 신뢰사이트, 제한사이트)
 - 가상드라이버로 Explore를 사용할 경우, XSS 필터 기능을 해제시켜줍니다.
-- 
+ 
 # 익스플로어 드라이버 버그
 - 익스플로어 드라이버 버그가 존재(get매소드 요청시 에러)합니다. 
 - 레지스트리 값을 등록해야합니다. 아래와 같은 설정 값을 넣어주세요.
+
 ```
 For IE 11 only, you will need to set a registry entry on the target computer 
 so that the driver can maintain a connection to the instance of Internet Explorer it creates. 
